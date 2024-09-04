@@ -1,0 +1,130 @@
+.testimonials {
+	padding: 4rem 1rem;
+	background-color: $dark-1;
+	color: #fff;
+
+	&__wrapper {
+		position: relative;
+	}
+
+	&__title {
+		text-align: center;
+		margin: 2rem auto;
+		width: fit-content;
+	}
+
+	&__slider {
+		position: relative;
+		padding-top: 5rem;
+	}
+
+	&__quote {
+		position: absolute;
+		top: 5rem;
+		left: 11.5%;
+		font-size: 5.5rem;
+		color: $secondary;
+	}
+
+	.testimonial {
+		position: relative;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		padding: 2rem 1rem;
+		&__quote {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		&__text {
+			max-width: 450px;
+			margin: auto;
+			font-size: 18px;
+			color: $grey-2;
+		}
+
+		&__author {
+			font-size: 16px;
+			margin: 2rem 0;
+			font-style: italic;
+			text-align: end;
+			color: $grey-2;
+
+			&-position {
+				margin: 0.5rem 0;
+			}
+		}
+
+		&__img {
+			max-width: 220px;
+			margin: 0 auto 3rem;
+			border-radius: 20px;
+			box-shadow: 10px 10px 30px $secondary;
+			overflow: hidden;
+		}
+	}
+
+	.splide__pagination__page {
+		border: none;
+		border-radius: 0;
+		width: 33px;
+		height: 3px;
+		opacity: 1;
+		transition: 0.3s;
+
+		&.is-active {
+			transform: none;
+			background: $primary;
+			box-shadow: 0px 1px 24px 2px $primary;
+		}
+
+		&:hover {
+			box-shadow: 0px 1px 24px 2px $primary;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.testimonials {
+		padding: 8rem 0;
+	}
+}
+
+@media (min-width: 1024px) {
+	.testimonials {
+		.testimonial {
+			flex-direction: row;
+
+			&__ {
+				display: flex;
+				flex-direction: column;
+			}
+
+			&__text {
+				max-width: 600px;
+				font-size: 21px;
+			}
+
+			&__author {
+				font-size: 18px;
+				text-align: left;
+				margin-bottom: 0;
+			}
+
+			&__img {
+				margin: 0;
+			}
+		}
+
+		&__slider {
+			padding-top: 11rem;
+		}
+
+		&__quote {
+			font-size: 8.5rem;
+		}
+	}
+}
+

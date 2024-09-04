@@ -1,0 +1,114 @@
+@import './Colors.scss';
+/* Box sizing reset */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: $primary $secondary;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Resetowanie marginesów i paddingu dla elementów lista */
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Resetowanie stylów dla linków */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Resetowanie stylów dla nagłówków */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+/* Resetowanie stylów dla półprzezroczystości elementów */
+img,
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Resetowanie styli dla tabel */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Resetowanie stylów dla formularzy */
+input,
+button,
+textarea,
+select {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font: inherit;
+}
+
+/* Resetowanie stylów dla elementów formularza */
+button {
+	cursor: pointer;
+}
+
+/* Resetowanie stylów dla przycisków */
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/* Resetowanie stylów dla elementów typu lista */
+input[type='checkbox'],
+input[type='radio'] {
+	vertical-align: middle;
+}
+
+/* Resetowanie stylów dla elementów wbudowanych */
+input[type='search'] {
+	-webkit-appearance: textfield;
+	appearance: textfield;
+	box-sizing: content-box;
+}
+
+/* Resetowanie stylów dla elementów kolorów */
+input[type='color'] {
+	-webkit-appearance: square-button;
+	appearance: square-button;
+}
+
+/* Resetowanie stylów dla pola daty */
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
+}
+
+/* Resetowanie stylów dla elementów kontrolnych */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/* Resetowanie stylów dla elementów z etykietami */
+label {
+	cursor: pointer;
+}
