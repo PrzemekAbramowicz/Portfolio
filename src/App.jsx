@@ -13,9 +13,9 @@ function App() {
 			<Header isSticky={false} />
 			<Header isSticky={true} />
 			<Hero />
-			<Skills />
 			<Portfolio />
-			<Testimonials />
+			<Skills />
+			{/* <Testimonials /> */}
 			<Contact />
 			<Footer />
 		</>

@@ -20,9 +20,10 @@
 
 	&__title {
 		margin: 0.5rem 0;
-		font-size: 35px;
+		font-size: 45px;
+		text-transform: uppercase;
 		font-weight: 700;
-		line-height: 45px;
+		line-height: 100%;
 	}
 
 	&__subtitle {
@@ -57,6 +58,8 @@
 					height: auto;
 					padding: 15px 35px;
 					border-radius: 50px;
+					color: #0f0715;
+					background-color: #8750f7;
 				}
 				svg {
 					margin-left: 10px;
@@ -90,7 +93,7 @@
 			font-size: 36px;
 		}
 		&__title {
-			font-size: 50px;
+			font-size: 70px;
 		}
 		&__img {
 			margin: 4rem auto;
@@ -130,6 +133,7 @@
 		}
 		&__content-box {
 			width: 50%;
+			flex-grow: 1;
 		}
 		&__img {
 			max-width: 60%;
@@ -141,6 +145,7 @@
 			display: none;
 		}
 		&__title {
+			font-size: 80px;
 			margin-top: 1rem;
 		}
 		&__subtitle {
@@ -155,8 +160,7 @@
 @media (min-width: 1400px) {
 	.hero {
 		&__title {
-			font-size: 65px;
-			line-height: 75px;
+			font-size: 130px;
 		}
 	}
 }

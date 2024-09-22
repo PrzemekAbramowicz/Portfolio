@@ -58,9 +58,8 @@ const Header = ({ isSticky }) => {
 				<nav className={`menu ${menuActive ? 'menu-show' : ''}`}>
 					<ul className='menu__list'>
 						{[
-							{ label: 'Umiejętności', href: 'skills' },
 							{ label: 'Portfolio', href: 'portfolio' },
-							{ label: 'Opinie', href: 'testimonials' },
+							{ label: 'Umiejętności', href: 'skills' },
 							{ label: 'Kontakt', href: 'contact' },
 						].map((item, index) => (
 							<li key={index} className='menu__item'>

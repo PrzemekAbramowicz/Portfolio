@@ -7,20 +7,20 @@ const Footer = () => {
 				</a>
 				<ul className='footer__list'>
 					<li className='footer__item'>
-						<a className='footer__item-link' href='#skills'>
-							Umiejętności
-						</a>
-					</li>
-					<li className='footer__item'>
 						<a className='footer__item-link' href='#portfolio'>
 							Portfolio
 						</a>
 					</li>
 					<li className='footer__item'>
+						<a className='footer__item-link' href='#skills'>
+							Umiejętności
+						</a>
+					</li>
+					{/* <li className='footer__item'>
 						<a className='footer__item-link' href='#testimonials'>
 							Opinie
 						</a>
-					</li>
+					</li> */}
 					<li className='footer__item'>
 						<a className='footer__item-link' href='#contact'>
 							Kontakt
